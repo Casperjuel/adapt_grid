@@ -16,10 +16,10 @@ $max-outer-width:$max-width + ($gutter * 2);
 
 // Visual grid
 // ------------------------
-$visual-grid: false;
+$visual-grid: true;
 $visual-grid-color: #3cb7c2;
 $visual-grid-index: front;
-$visual-grid-opacity: 0.5;
+$visual-grid-opacity: 0.3;
 
 // Breakpoints
 // ------------------------
