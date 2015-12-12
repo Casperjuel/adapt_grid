@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  background-color: darken(white, 2%);
+  overflow: visible;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background: darken($blue, 5%);
+    height: 10px;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .inner {
+    background-color: white;
+    height: 100%;
+    position: static;
+    overflow: visible;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-width: $max-outer-width;
+      display: block;
+      background: $blue;
+      height: 10px;
+      width: 100%;
+      z-index: 100;
+      margin: auto;
+    }
+  }
+}
+
+.logo {
+  height: 100%;
+  padding-top: 10px;
+  width: auto;
+  float: left;
+  display: block;
+}
