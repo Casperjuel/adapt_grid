@@ -1,2 +1,4 @@
-# base_style
-Basic styling for new projects, Node-sass, Bourbon &amp; Neat
+# adapt_grid
+Basic grid example made with Bourbon & Neat
+
+http://casperjuel.github.io/adapt_grid/
