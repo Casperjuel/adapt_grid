@@ -6,7 +6,7 @@ main {
   height: 100%;
   position: relative;
   padding: 10px;
-  padding-top: 40px;
+  padding-top: $gutter * 2;
 
   @include media($phone) {
     padding: 0;
@@ -22,7 +22,7 @@ main {
 section {
   height: auto;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
 
   &.one_col {
     article {
@@ -44,7 +44,7 @@ section {
       @include media($phone) {
         @include span-columns(4);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
 
         &:last-child {
           margin-bottom: 0;
@@ -73,11 +73,11 @@ section {
 
         @include omega(first-child);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
 
         &:nth-last-child(2) {
           display: block;
-          margin-bottom: 20px;
+          margin-bottom: $gutter;
         }
 
         &:last-child {
@@ -97,7 +97,7 @@ section {
 
         @include omega(even);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
 
         &:last-child, &:nth-last-child(2) {
           margin-bottom: 0;
@@ -108,10 +108,10 @@ section {
       @include media($phone) {
         @include span-columns(4);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
 
         &:nth-last-child(2) {
-          margin-bottom: 20px;
+          margin-bottom: $gutter;
         }
       }
     }
@@ -126,14 +126,14 @@ section {
 
         @include omega(even);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
       }
 
 
       @include media($phone) {
         @include span-columns(4);
 
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
 
         &:last-child {
           margin-bottom: 0;
